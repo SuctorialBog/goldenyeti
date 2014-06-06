@@ -10,6 +10,7 @@ Getting started on a frontend project quickly.
 * Install bower
 
 * Git clone this repo or download it.
+* Remove git origins from this project.
 * Run 'bower install' from the project directory.
 * Run 'npm install' from the project directory.
 
