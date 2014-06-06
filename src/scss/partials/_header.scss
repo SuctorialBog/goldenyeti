@@ -1,0 +1,14 @@
+header{
+  background: $light-gray;
+  overflow: hidden;
+  img.logo{
+    float: left;
+    display: block;
+  }
+  .lang-dropdown{
+    float: right;
+  }
+  #contact-button{
+    float: right;
+  }
+}

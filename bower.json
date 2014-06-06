@@ -1,0 +1,28 @@
+{
+  "name": "Blank Gulp Starter",
+  "version": "1.0.0",
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "jeet": "https://github.com/mojotech/jeet.git",
+    "normalize-scss": "~3.0.1",
+    "fontawesome": "~4.0.3",
+    "selectivizr-new": "~1.0.3",
+    "respondJS": "~1.4.2",
+    "typeplate-starter-kit": "~1.1.4"
+  },
+  "overrides": {
+    "modernizr": {
+      "main": "modernizr.js"
+    },
+    "jquery": {
+        "ignore": true
+    },
+    "normalize-scss": {
+        "ignore": true
+    },
+    "selectivizr-new": {
+      "main": "selectivizr.js"
+    }
+  }
+}
