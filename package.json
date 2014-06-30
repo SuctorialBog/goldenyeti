@@ -1,7 +1,10 @@
 {
-  "name": "Blank Gulp Starter",
+  "name": "Gulp-Starter",
   "browser": {
-    "plugin": "./src/javascript/vendor/jquery-plugin.js"
+    "jquery" : "./bower_components/jquery/dist/jquery.min.js",
+    "unslider": "./bower_components/unslider/src/unslider.js",
+    "select2": "./bower_components/select2/select2.js",
+    "bootstrap": "./src/js/vendor/bootstrap.js"
   },
   "browserify": {
     "transform": [
@@ -11,11 +14,8 @@
     ]
   },
   "browserify-shim": {
-    "plugin": {
-      "exports": "plugin",
-      "depends": [
-        "jquery:$"
-      ]
+    "jquery": {
+      "exports": "$"
     }
   },
   "devDependencies": {
@@ -25,6 +25,7 @@
     "coffeeify": "~0.6.0",
     "connect": "~2.14.3",
     "gulp": "~3.6.0",
+    "gulp-autoprefixer": "0.0.7",
     "gulp-bower-files": "^0.2.4",
     "gulp-changed": "~0.3.0",
     "gulp-file-include": "^0.3.1",
@@ -39,8 +40,5 @@
     "pretty-hrtime": "~0.2.1",
     "vinyl-source-stream": "~0.1.1",
     "watchify": "~0.10.1"
-  },
-  "dependencies": {
-    "jquery": "~1.11.1"
   }
 }

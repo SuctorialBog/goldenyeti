@@ -162,6 +162,7 @@ figure {
  */
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -256,6 +257,8 @@ input {
  *  Known issue: excess padding remains in IE 6.
  */
 input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -348,7 +351,6 @@ td, th {
   align($direction: both)
   cf()
 */
-
 header {
   background: #eee;
   overflow: hidden; }
