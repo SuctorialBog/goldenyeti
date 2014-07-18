@@ -1,2 +1,2 @@
-$ = require('jquery')
-console.log 'js loaded'
+$ = require('jquery');
+console.log('js loaded');

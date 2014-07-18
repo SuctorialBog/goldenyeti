@@ -1,7 +1,7 @@
 {
   "name": "Gulp-Starter",
   "browser": {
-    "jquery" : "./bower_components/jquery/dist/jquery.min.js",
+    "jquery": "./bower_components/jquery/dist/jquery.min.js",
     "unslider": "./bower_components/unslider/src/unslider.js",
     "select2": "./bower_components/select2/select2.js",
     "bootstrap": "./src/js/vendor/bootstrap.js"
@@ -24,13 +24,14 @@
     "browserify-shim": "~3.4.1",
     "coffeeify": "~0.6.0",
     "connect": "~2.14.3",
-    "gulp": "~3.6.0",
+    "gulp": "^3.8.5",
     "gulp-autoprefixer": "0.0.7",
     "gulp-bower-files": "^0.2.4",
     "gulp-changed": "~0.3.0",
     "gulp-file-include": "^0.3.1",
     "gulp-imagemin": "~0.1.5",
     "gulp-livereload": "~1.2.0",
+    "gulp-map": "0.0.2",
     "gulp-notify": "~1.2.4",
     "gulp-open": "~0.2.8",
     "gulp-sass": "^0.7.1",
