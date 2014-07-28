@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('build', ['browserify', 'scss', 'bower', 'images', 'html', 'font_icons', 'ie8']);
+gulp.task('build', ['coffeelint', 'browserify', 'scss', 'bower', 'images', 'html', 'font_icons', 'ie8']);

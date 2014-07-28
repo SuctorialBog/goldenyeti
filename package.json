@@ -28,6 +28,7 @@
     "gulp-autoprefixer": "0.0.7",
     "gulp-bower-files": "^0.2.4",
     "gulp-changed": "~0.3.0",
+    "gulp-coffeelint": "^0.3.3",
     "gulp-file-include": "^0.3.1",
     "gulp-imagemin": "~0.1.5",
     "gulp-livereload": "~1.2.0",

@@ -6,8 +6,15 @@ var handleErrors = require('../util/handleErrors');
 
 gulp.task('scss', function() {
   return gulp.src('./src/scss/*.scss')
-    .pipe(scss({errLogToConsole: true}))
+    .pipe(scss({
+      errLogToConsole: false,
+      onSuccess: function() {
+          return notify().write("Sass Compiled!");
+      },
+      onError: function(err) {
+          return notify().write(err);
+      }
+    }))
     .pipe(prefix("last 3 version", "> 1%", "ie 8"))
-    .pipe(gulp.dest('./build/css'))
-    .on('error', handleErrors);
+    .pipe(gulp.dest('./build/css'));
 });
