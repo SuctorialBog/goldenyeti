@@ -1,14 +1,11 @@
 var gulp  = require('gulp');
-var uglify = require('gulp-uglify');
-var bower = require('gulp-bower-files');
-
+var bower = require('main-bower-files');
 gulp.task('bower', function() {
-  bower()
-    .pipe(uglify())
+  return gulp.src(bower())
     .pipe(gulp.dest('build/lib/'))
 });
 
 gulp.task('ie8', function() {
   return gulp.src(['bower_components/selectivizr/selectivizr.js'])
-    .pipe(gulp.dest('build/lib/selectivizr/'));
+    .pipe(gulp.dest('build/lib/'));
 });

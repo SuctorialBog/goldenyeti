@@ -1,0 +1,24 @@
+root = true
+
+[*]
+indent_style = tab
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+
+[*.jade]
+indent_style = space
+indent_size = 2
+
+
+[*.coffee]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false

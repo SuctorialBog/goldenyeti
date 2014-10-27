@@ -9,7 +9,7 @@ gulp.task('images', function() {
 
 	return gulp.src('./src/img/**')
 		.pipe(changed(dest)) // Ignore unchanged files
-		.pipe(imagemin()) // Optimize
-		.pipe(gulp.dest(dest))
-    .on('error', handleErrors);
+		.pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })) // Optimize
+		.on('error', handleErrors)
+    .pipe(gulp.dest(dest));
 });

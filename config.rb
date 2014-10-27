@@ -1,0 +1,15 @@
+sass_path = File.dirname(__FILE__)
+preferred_syntax = :scss
+# project_path = '/'
+# http_path = '/'
+# css_dir = 'public/css'
+sass_dir = 'scss'
+images_dir = 'src/img'
+http_generated_images_path = '../img'
+generated_images_dir = 'src/img'
+# javascripts_dir = 'src/js'
+sprite_load_path = 'src/img'
+relative_assets = false
+line_comments = false
+sourcemap = false
+output_style = :compressed

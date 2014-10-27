@@ -4,22 +4,23 @@
 
 Getting started on a frontend project quickly.
 
-### How do I get set up? ###
-
-* Install Node
-* Install bower
+### How do I even?
+This assumes you have Node, Bower, RVM, SASS and Compass already installed. If not [look here](https://gist.github.com/jboshers/9f870af4726f017d6c67).
 
 * Git clone this repo or download it.
 * Remove git origins from this project.
-* Run 'bower install' from the project directory.
-* Run 'npm install' from the project directory.
+* From a new terminal window within this project, type: ``` npm install ```
+* Then type: ``` bower install ```
+* Then type: ``` gulp ```
+* A browser window should open with the site showing.
 
-You can run the project by typing 'gulp' in the project directory. 
+### Gulp Commands (Quicklist)
+* ``` gulp ``` - starts server and kicks off watching.
+* ``` gulp coffeelint``` - Lints your coffeescript.
+* ``` gulp scripts:prod``` - compresses and minifies all your javascripts.
 
-### What does this give me? ###
+### Contribution guidelines
+* Submit code on your own branch. Make a pull request.
 
-* HTML5 Boilerplate
-* LiveReload with Browser-Sync
-* Browserify for modular js
-* Coffeescript
-* HTML Partials/includes
+### Who's responsible for this monstrosity?
+Jeff Boshers, mostly.
