@@ -1,8 +1,8 @@
 {
-  "name": "Gulp-Starter",
+  "name": "GoldenYeti",
   "repository": {
     "type": "git",
-    "url": "change me seymour."
+    "url": "http://www.goldenyetiart.com"
   },
   "private": true,
   "browser": {
