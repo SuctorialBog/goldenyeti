@@ -1,0 +1,20 @@
+@include selection(
+	$selection-bg: $blue,
+	$selection-c: #fff,
+	$selection-ts: none
+);
+
+// Helper Classes
+
+.bold-text {
+	font-weight: bold;
+}
+.underline{
+  border-bottom: 1px solid $grey;
+}
+.underline--dotted{
+  border-bottom: 1.5px dashed $grey;
+}
+.hidden{
+  display: none;
+}

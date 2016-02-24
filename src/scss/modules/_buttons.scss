@@ -1,0 +1,9 @@
+.btn:focus {
+  outline: none;
+}
+
+a,
+.btn,
+button {
+  transition: all 0.5s ease;
+}

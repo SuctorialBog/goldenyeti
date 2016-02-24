@@ -1,3 +1,91 @@
-$light-gray:    #eee;
-$middle-gray:   #fff;
-$gray:          #ccc;  
+
+////// COLOR SETS //////////////////////////////////////
+
+$teal                 :       rgba(26, 188, 156,1.0);
+$teal-dark            :       rgba(22, 160, 133,1.0);
+
+$emerald              :       rgba(46, 204, 113,1.0);
+$emerald-dark         :       rgba(39, 174, 96,1.0);
+
+$green                :       rgba(138, 206, 73, 1.0);
+$green-dark           :       rgba(93, 146, 42, 1.0);
+
+$blue                 :       rgba(61, 174, 235, 1.0);
+$blue-dark            :       rgba(18, 137, 215, 1.0);
+
+$steel-blue           :       rgba(76, 95, 122, 1.0);
+$steel-blue-dark      :       rgba(31, 39, 50, 1.0);
+$steel-blue-light     :       rgba(168, 180, 197, 1.0);
+
+$purple               :       rgba(155, 89, 182,1.0);
+$purple-dark          :       rgba(142, 68, 173,1.0);
+
+$navy                 :       rgba(52, 73, 94,1.0);
+$navy-dark            :       rgba(44, 62, 80,1.0);
+$navy-light           :       rgba(59, 76, 103, 1.0);
+
+$yellow               :       rgba(241, 196, 15,1.0);
+$yellow-dark          :       rgba(243, 156, 18,1.0);
+
+$yellow-orange        :       rgba(247, 148, 23,1.0);
+
+$orange               :       rgba(230, 126, 34,1.0);
+$orange-dark          :       rgba(211, 84, 0,1.0);
+
+$red                  :       rgba(231, 76, 60,1.0);
+$red-dark             :       rgba(192, 57, 43,1.0);
+
+$off-white            :       rgba(245, 245, 247, 1.0);
+$lightgrey            :       rgba(195, 195, 195, 1.0);
+
+$grey                 :       rgba(155, 155, 155, 1.0);
+$grey-dark            :       rgba(132, 132, 132, 1.0);
+$charcoal             :       rgba(57, 57, 57,1.0);
+$off-black            :       rgba(36, 36, 36, 1.0);
+
+$white                :       rgba(255,255,255,1.0);
+$black                :       rgba(0,0,0,1.0);
+
+$brown                :       rgba(125,88,33,1.0);
+
+
+$brand-primary        :       rgba(255, 134, 24, 1.0);
+$brand-primary-dark   :       darken($brand-primary,15%);
+$brand-secondary      :       rgba(61, 174, 235, 1.0);
+$brand-secondary-dark :       rgba(18, 137, 215, 1.0);
+
+
+// Put Final font stack here.
+
+$sans-serif-thick     :       "Lato", arial, sans-serif;
+$sans-serif           :       "Open Sans", arial, sans-serif;
+$serif                :       "Roboto Slab", georgia, serif ;
+$awesome              :       "FontAwesome";
+$sans-serif-thin      :       "Raleway", arial, sans-serif;
+
+
+// Z-INDEX
+
+$z-0    :   1;
+$z-1    :   100;
+$z-2    :   200;
+$z-3    :   300;
+$z-4    :   400;
+$z-5    :   500;
+
+// BORDER RADIUS
+
+$corners : 2px;
+
+// BREAK POINTS //////////////////////////////////////////////////
+
+$bp-xs                  :         20em;
+$bp-small               :         24em;
+$tp-small-med           :         35.8em;
+$tp-med                 :         45.5em;
+$bp-med                 :         50.6em;
+$tp-med-med             :         56.56em;
+$bp-large               :         63em;
+$tp-large               :         70em;
+$bp-xl                  :         80em;
+$tp-xl                  :         81em;

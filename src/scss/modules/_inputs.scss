@@ -1,0 +1,56 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea{
+  border: 1px solid $lightgrey;
+  border-radius: $corners;
+  padding: 6px;
+  outline: 0;
+  font-family: $sans-serif;
+}
+textarea {
+  resize: none;
+}
+input[type="text"].search {
+  width: 100%;
+  padding-right: 30px;
+  border-radius: 0;
+  background:none;
+  border: 0 solid $white;
+  &::placeholder{
+    color: #fff;
+    @include font-size(1.0);
+    font-family: $sans-serif  ;
+  }
+  & + i{
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  color: $white;
+  }
+}
+
+select{
+  color: $black;
+}
+
+input[type=submit]{
+  background: none;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+   color: $grey;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $grey;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $grey;
+}
+
+:-ms-input-placeholder {
+   color: $grey;
+}

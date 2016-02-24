@@ -2,3 +2,123 @@
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
+@mixin line-height($sizeValue: 1.6) {
+  line-height: ($sizeValue * 10) + px;
+  line-height: $sizeValue + rem;
+}
+
+.word-wrap {
+  overflow-wrap: break-word;
+  -ms-word-break: break-all;
+   word-break: break-all;
+   word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+//
+//@mixin word-wrap() {
+//  overflow-wrap: break-word;
+//  word-wrap: break-word;
+//  -ms-word-break: break-all;
+//  word-break: break-word;
+//  -ms-hyphens: auto;
+//  -moz-hyphens: auto;
+//  -webkit-hyphens: auto;
+//  hyphens: auto;
+//}
+//
+
+@mixin selection($selection-bg: #333, $selection-c: #fff, $selection-ts: none) {
+  ::-moz-selection{
+    background: $selection-bg;
+    color: $selection-c;
+    text-shadow: $selection-ts;
+  }
+  ::selection{
+    background: $selection-bg;
+    color: $selection-c;
+    text-shadow: $selection-ts;
+  }
+}
+
+.cf {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin center($container-width) {
+    @extend .cf;
+    width: $container-width;
+    float: none !important;
+    display: block;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    *margin-right: auto !important;
+    *margin-left: auto !important;
+}
+
+.vert-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vert-parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+$sm-btn    :   .5em 1em;
+$md-btn    :   1em 2em;
+$lg-btn    :   1.5em 3em;
+
+@mixin btn($bkg,$bkg-hover,$type-color,$size) {
+  padding: $size;
+  text-align: center;
+  text-decoration: none;
+  color: $type-color;
+  background: $bkg;
+  border-radius: $corners;
+  display: inline-block;
+  &:hover{
+    background: $bkg-hover;
+    color: $type-color;
+  }
+}
+
+@mixin bp-at-least($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content
+  }
+}
+
+// Breakpoint Until
+@mixin bp-until($device-width) {
+  @media screen and (max-width: $device-width - .01) {
+    @content
+  }
+}
+
+// Breakpoint Between
+@mixin bp-between($device-width, $device-width2) {
+  @media screen and (min-width: $device-width) and (max-width: $device-width2) {
+    @content
+  }
+}

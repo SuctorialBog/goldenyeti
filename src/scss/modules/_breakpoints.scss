@@ -1,0 +1,25 @@
+
+@media only screen and (min-width:320px) {
+  .mobile {display: block !important;}
+  .desktop {display: none !important;}
+}
+@media only screen and (min-width:480px) {
+  .mobile {display: block !important;}
+  .desktop {display: none !important;}
+}
+@media only screen and (min-width:768px) {
+ .mobile {display: block !important;}
+ .desktop {display: none !important;}
+}
+@media only screen and (min-width:1024px) {
+  .mobile {display: none !important;}
+  .desktop {display: block !important;}
+}
+@media only screen and (min-width:1140px) {
+  .mobile {display: none !important;}
+  .desktop {display: block !important;}
+}
+@media only screen and (min-width:1280px) {
+  .mobile {display: none !important;}
+  .desktop {display: block !important;}
+}

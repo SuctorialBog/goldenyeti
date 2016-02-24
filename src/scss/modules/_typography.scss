@@ -1,1 +1,139 @@
-@import '../../bower_components/normalize-scss/normalize';
+@import '../../bower_components/normalize-scss/_normalize';
+@import '../../bower_components/fontawesome/scss/font-awesome';
+//@import '../../bower_components/pe-icon-7-stroke/pe-icon-7-stroke/scss/pe-icon-7-stroke';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900);
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+  @include font-size(1.4);
+  @include line-height(2);
+  color: $off-black;
+  font-family: $sans-serif;
+}
+p {
+  @include font-size(1.4);
+  @include line-height(2.0);
+}
+
+h1,h2,h3,h4,h5{
+  font-family: $sans-serif-thick;
+  font-weight: 900;
+}
+
+h1{
+  font-family: $sans-serif-thick;
+  font-weight: 900;
+  line-height: 1;
+  @include font-size(4.8);
+  @include line-height(5.3);
+}
+h2{
+  font-family: $sans-serif-thick;
+  font-weight: 900;
+  @include font-size(3.6);
+  @include line-height(4.1);
+}
+h3{
+  font-family: $sans-serif;
+  font-weight: 600;
+  @include font-size(2.4);
+  @include line-height(2.9);
+}
+h4{
+  font-weight: 400;
+  @include font-size(2.0);
+  @include line-height(2.5);
+}
+h5{
+  font-weight: 400;
+  line-height: 1;
+}
+h6{
+  font-weight: 200;
+  line-height: 1;
+}
+
+// HELPER FONT CLASSES
+
+  .lato1{
+    font-family: $sans-serif-thick;
+    font-weight: 300;
+  }
+  .lato2{
+    font-family: $sans-serif-thick;
+    font-weight: 400;
+  }
+  .lato3{
+    font-family: $sans-serif-thick;
+    font-weight: 900;
+  }
+  .open1{
+    font-family: $sans-serif;
+    font-weight: 300;
+  }
+  .open2{
+    font-family: $sans-serif;
+    font-weight: 400;
+  }
+  .open3{
+    font-family: $sans-serif;
+    font-weight: 600;
+  }
+  .open4{
+    font-family: $sans-serif;
+    font-weight: 700;
+  }
+  .open5{
+    font-family: $sans-serif;
+    font-weight: 800;
+  }
+  .roboto1{
+    font-family: $serif;
+    font-weight: 300;
+  }
+  .roboto2{
+    font-family: $serif;
+    font-weight: 400;
+  }
+  .raleway1{
+    font-family: $sans-serif-thin;
+    font-weight: 100;
+  }
+  .raleway2{
+    font-family: $sans-serif-thin;
+    font-weight: 200;
+  }
+  .raleway3{
+    font-family: $sans-serif-thin;
+    font-weight: 300;
+  }
+  .raleway4{
+    font-family: $sans-serif-thin;
+    font-weight: 400;
+  }
+  .raleway5{
+    font-family: $sans-serif-thin;
+    font-weight: 500;
+  }
+  .raleway6{
+    font-family: $sans-serif-thin;
+    font-weight: 600;
+  }
+  .raleway7{
+    font-family: $sans-serif-thin;
+    font-weight: 700;
+  }
+  .raleway8{
+    font-family: $sans-serif-thin;
+    font-weight: 800;
+  }
+  .raleway9{
+    font-family: $sans-serif-thin;
+    font-weight: 900;
+  }
