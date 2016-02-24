@@ -1,5 +1,5 @@
 var gulp                = require('gulp');
-var scss                = require('gulp-ruby-sass');
+var scss                = require('gulp-sass');
 var prefix              =  require('gulp-autoprefixer');
 var notify              = require('gulp-notify');
 var handleErrors        = require('../util/handleErrors');
