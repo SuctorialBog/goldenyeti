@@ -2,7 +2,7 @@
 @import '../../bower_components/fontawesome/scss/font-awesome';
 //@import '../../bower_components/pe-icon-7-stroke/pe-icon-7-stroke/scss/pe-icon-7-stroke';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900);
 
@@ -93,13 +93,17 @@ h6{
     font-family: $sans-serif;
     font-weight: 800;
   }
-  .roboto1{
-    font-family: $serif;
-    font-weight: 300;
-  }
-  .roboto2{
+  .crimson1{
     font-family: $serif;
     font-weight: 400;
+  }
+  .crimson2{
+    font-family: $serif;
+    font-weight: 600;
+  }
+  .crimson3{
+    font-family: $serif;
+    font-weight: 700;
   }
   .raleway1{
     font-family: $sans-serif-thin;

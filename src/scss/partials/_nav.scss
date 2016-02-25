@@ -1,4 +1,4 @@
-nav {
+#main-nav {
   width: 100%;
   left: -200%;
   top: 66px;
@@ -78,6 +78,9 @@ nav {
           text-decoration: none;
           background-color: transparent;
           margin-right: 2em;
+        }
+        &:visited{
+          color: $white;
         }
         &:hover{
           color: $grey;
