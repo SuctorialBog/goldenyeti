@@ -1,5 +1,4 @@
 $ = require('jquery')
-$ = require('slidebars')
 console.log('js loaded')
 
 whichTransitionEvent = ->
