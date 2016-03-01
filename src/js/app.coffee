@@ -38,4 +38,4 @@ $ ->
         $(this).toggleClass('animating')
     )
 
-  $.slidebars()
+  # $.slidebars()
