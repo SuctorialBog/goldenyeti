@@ -1,4 +1,5 @@
 $ = require('jquery')
+$ = require('slidebars')
 console.log('js loaded')
 
 whichTransitionEvent = ->
@@ -25,7 +26,7 @@ $ ->
   $(".dropdown").on "click", (e) ->
     e.preventDefault
     if $(this).hasClass('open')
-      console.log('dicks')
+      # console.log('dicks')
       $(this).removeClass('open')
       $(this).next(".submenu").removeClass("open")
       return true
@@ -37,3 +38,5 @@ $ ->
       (e) ->
         $(this).toggleClass('animating')
     )
+
+  $.slidebars()

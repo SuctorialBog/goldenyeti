@@ -1,5 +1,5 @@
 {
-  "name": "Gulp Starter",
+  "name": "Golden Yeti",
   "version": "1.0.0",
   "dependencies": {
     "modernizr": "~2.8.2",
@@ -10,7 +10,8 @@
     "respondJS": "~1.4.2",
     "selectivizr": "~1.0.2",
     "owlcarousel": "~1.3.2",
-    "select2": "~3.5.0"
+    "select2": "~3.5.0",
+    "slidebars": "https://github.com/Slowvoice/Slidebars.git#master"
   },
   "overrides": {
     "modernizr": {
