@@ -1,6 +1,7 @@
 var $, whichTransitionEvent;
 
 $ = require('jquery');
+var slide = require('slidebars');
 
 console.log('js loaded');
 
