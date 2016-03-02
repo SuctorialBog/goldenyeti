@@ -10,7 +10,7 @@
     "select2": "./bower_components/select2/select2.js",
     "bootstrap": "./src/js/vendor/bootstrap.js",
     "owlCarousel": "./bower_components/owlcarousel/owl-carousel/owl.carousel.js",
-    "slidebars": "./bower_components/Slidebars/distribution/0.10.2/slidebars.js"
+    "slidebars": "./bower_components/slidebars/distribution/0.10.2/slidebars.js"
   },
   "browserify": {
     "transform": [

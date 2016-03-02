@@ -1,7 +1,7 @@
 var $, whichTransitionEvent;
 
 $ = require('jquery');
-var slide = require('slidebars');
+var slidebars = require('slidebars');
 
 console.log('js loaded');
 
@@ -29,7 +29,15 @@ $(function() {
       return $("#main-nav").toggleClass('animating');
     });
   });
-  return $(".dropdown").on("click", function(e) {
+
+  $.slidebars({
+    siteClose: true, // true or false
+    disableOver: 480, // integer or false
+    hideControlClasses: true, // true or false
+    scrollLock: false // true or false
+  });
+
+  $(".dropdown").on("click", function(e) {
     e.preventDefault;
     if ($(this).hasClass('open')) {
       $(this).removeClass('open');
@@ -43,11 +51,5 @@ $(function() {
     return $(this).next(".submenu").toggleClass('open').one(whichTransitionEvent(), function(e) {
       return $(this).toggleClass('animating');
     });
-  });
-  $.slidebars({
-    siteClose: true, // true or false
-    disableOver: 480, // integer or false
-    hideControlClasses: true, // true or false
-    scrollLock: false // true or false
   });
 });
