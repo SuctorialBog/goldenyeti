@@ -23,7 +23,7 @@ node_modules
 bower_components
 
 ## BUILD FOLDER
-build
+
 
 ## Sass
 .sass-cache
