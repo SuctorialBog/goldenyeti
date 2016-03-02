@@ -12,7 +12,7 @@ gulp.task('scripts:dev', ['coffeelint'], function() {
 
   var bundler = browserify({
   	cache: {}, packageCache: {}, fullPaths: true,
-    entries: ['./src/js/app.coffee'],
+    entries: ['./src/js/app.js'],
     extensions: ['.js', '.coffee'],
     debug: true
   });

@@ -43,4 +43,10 @@ $(function() {
       return $(this).toggleClass('animating');
     });
   });
+  $.slidebars({
+    siteClose: true, // true or false
+    disableOver: 480, // integer or false
+    hideControlClasses: true, // true or false
+    scrollLock: false // true or false
+  });
 });
