@@ -1801,7 +1801,7 @@ h6 {
   font-family: "Crimson Text", georgia, serif;
   font-weight: 400; }
 
-.crimson2 {
+.crimson2, #main-nav ul li a {
   font-family: "Crimson Text", georgia, serif;
   font-weight: 600; }
 
@@ -1981,7 +1981,7 @@ h6 {
 header {
   width: 100%;
   height: 40px;
-  padding: 1.5em 0;
+  padding: 1em 0;
   background: black;
   position: relative;
   z-index: 400; }
@@ -2000,7 +2000,7 @@ header {
   top: 66px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  background-color: #34495e;
+  background-color: #393939;
   transition: left 0.5s ease;
   position: absolute;
   z-index: 2;
@@ -2026,7 +2026,7 @@ header {
     left: 0;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
-    background-color: #34495e;
+    background-color: #393939;
     opacity: 1;
     max-height: none; }
     @media screen and (min-width: 50.6em) {
@@ -2053,7 +2053,7 @@ header {
         width: auto;
         float: right;
         padding: 0;
-        margin: 0; } }
+        margin: 0.5em 0 0; } }
     #main-nav ul li {
       width: 100%;
       display: block;
@@ -2070,10 +2070,10 @@ header {
         display: block;
         padding: 1em 2em;
         color: white;
-        font-family: "Lato", arial, sans-serif;
-        font-weight: 900;
-        border-bottom: 1px solid #22303d;
-        background-color: #34495e;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-bottom: 1px solid #202020;
+        background-color: #393939;
         text-decoration: none; }
         @media screen and (min-width: 50.6em) {
           #main-nav ul li a {
@@ -2081,9 +2081,7 @@ header {
             font-size: 1.6rem;
             display: block;
             padding: 0;
-            color: #848484;
-            font-family: "Open Sans", arial, sans-serif;
-            font-weight: 400;
+            color: white;
             border-bottom: none;
             text-decoration: none;
             background-color: transparent;
@@ -2091,17 +2089,17 @@ header {
         #main-nav ul li a:visited {
           color: white; }
         #main-nav ul li a:hover {
-          color: #9b9b9b;
+          color: #FFCA2F;
           text-decoration: none; }
           @media screen and (min-width: 50.6em) {
             #main-nav ul li a:hover {
-              color: black;
+              color: #FFCA2F;
               text-decoration: none; } }
         #main-nav ul li a.dropdown.open {
           color: #9b9b9b; }
           @media screen and (min-width: 50.6em) {
             #main-nav ul li a.dropdown.open {
-              color: black; } }
+              color: #FFCA2F; } }
           #main-nav ul li a.dropdown.open:after {
             content: '\f0d8';
             font-family: 'FontAwesome';
@@ -2129,7 +2127,8 @@ header {
             opacity: 0;
             position: absolute;
             background-color: black;
-            right: 2em;
+            top: 1.5em;
+            left: 0em;
             -webkit-transform: translateY(22px);
                 -ms-transform: translateY(22px);
                     transform: translateY(22px);
@@ -2145,11 +2144,9 @@ header {
             width: 100%;
             font-size: 16px;
             font-size: 1.6rem;
-            font-family: "Open Sans", arial, sans-serif;
-            background-color: #848484;
+            background-color: #393939;
             color: white;
-            padding: 0.5em 1em;
-            font-weight: 400; }
+            padding: 0.5em 1em; }
             #main-nav ul li ul.submenu li a:hover {
               background-color: #6b6b6b; } }
         #main-nav ul li ul.submenu.open {
@@ -2160,23 +2157,27 @@ header {
           @media screen and (min-width: 50.6em) {
             #main-nav ul li ul.submenu.open {
               opacity: 1;
-              color: black;
+              background: black;
               z-index: 99; } }
           #main-nav ul li ul.submenu.open li a {
-            background-color: #22303d;
-            border-bottom: 1px solid #10161c;
+            background-color: #202020;
+            border-bottom: 1px solid #060606;
             text-indent: 1em; }
+            #main-nav ul li ul.submenu.open li a:hover {
+              background-color: #FFCA2F;
+              color: #393939;
+              border-bottom: 1px solid #FFCA2F; }
             @media screen and (min-width: 50.6em) {
               #main-nav ul li ul.submenu.open li a {
-                background-color: #848484;
-                border-bottom: none;
+                background-color: #393939;
                 text-indent: 0; } }
 
 #nav-toggle {
   cursor: pointer;
   padding: 10px 35px 16px 0px;
   float: right;
-  margin-right: 2em; }
+  margin-right: 2em;
+  margin-top: 0.25em; }
   @media screen and (min-width: 50.6em) {
     #nav-toggle {
       display: none; } }

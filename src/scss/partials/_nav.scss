@@ -3,7 +3,7 @@
   left: -200%;
   top: 66px;
   transform-style: preserve-3d;
-  background-color: #34495e;
+  background-color: $charcoal;
   transition: left 0.5s ease;
   position: absolute;
   z-index: 2;
@@ -26,7 +26,7 @@
   &.open {
     left: 0;
     transform-style: preserve-3d;
-    background-color: #34495e;
+    background-color: $charcoal;
     opacity: 1;
     max-height:none;
     @include bp-at-least($bp-med) {
@@ -43,7 +43,7 @@
         width: auto;
         float: right;
         padding: 0;
-        margin: 0;
+        margin: 0.5em 0 0;
       }
     }
     li {
@@ -59,21 +59,20 @@
         position:relative;
       }
       a{
+        @extend .crimson2;
         display: block;
         padding: 1em 2em;
         color: $white;
-        font-family: $sans-serif-thick;
-        font-weight: 900;
-        border-bottom: 1px solid darken(#34495e,10%);
-        background-color: #34495e;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-bottom: 1px solid darken($charcoal,10%);
+        background-color: $charcoal;
         text-decoration: none;
         @include bp-at-least($bp-med) {
           @include font-size(1.6);
           display: block;
           padding: 0;
-          color: $grey-dark;
-          font-family: $sans-serif;
-          font-weight: 400;
+          color: $white;
           border-bottom: none;
           text-decoration: none;
           background-color: transparent;
@@ -83,10 +82,10 @@
           color: $white;
         }
         &:hover{
-          color: $grey;
+          color: $brand-primary;
           text-decoration: none;
           @include bp-at-least($bp-med) {
-            color: $black;
+            color: $brand-primary;
             text-decoration: none;
           }
         }
@@ -94,7 +93,7 @@
           &.open{
             color: $grey;
             @include bp-at-least($bp-med) {
-              color: $black;
+              color: $brand-primary;
             }
             &:after {
               content: '\f0d8';
@@ -118,17 +117,18 @@
         }
       }
       ul.submenu {
-        visibility:hidden;
-        opacity:0;
-        max-height:0;
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
         // transition:visibility 0s linear 0.2s, opacity 0.2s linear;
         transition: all 0.3s ease;
-        position:relative;
+        position: relative;
         @include bp-at-least($bp-med) {
-          opacity:0;
+          opacity: 0;
           position: absolute;
           background-color: $black;
-          right: 2em;
+          top: 1.5em;
+          left: 0em;
           transform: translateY(22px);
           transform-style: preserve-3d;
           width: 200px;
@@ -142,37 +142,38 @@
             @include bp-at-least($bp-med) {
               width: 100%;
               @include font-size(1.6);
-              font-family: $sans-serif;
-              background-color: $grey-dark;
+              background-color: $charcoal;
               color: $white;
               padding: 0.5em 1em;
-              font-weight: 400;
               &:hover {
                 background-color: darken($grey-dark, 10%);
               }
             }
           }
         }
-
         &.open{
-          visibility:visible;
-          opacity:1;
-          max-height:none;
+          visibility: visible;
+          opacity: 1;
+          max-height: none;
           // transition:visibility 0s linear 0.2s, opacity 0.2s linear;
           transition: all 0.5s ease;
           @include bp-at-least($bp-med) {
             opacity:1;
-            color: $black;
+            background: $black;
             z-index: 99;
           }
           li {
             a{
-              background-color: darken(#34495e,10%);
-              border-bottom: 1px solid darken(#34495e,20%);
+              background-color: darken($charcoal,10%);
+              border-bottom: 1px solid darken($charcoal,20%);
               text-indent: 1em;
+              &:hover {
+                background-color: $brand-primary;
+                color: $charcoal;
+                border-bottom: 1px solid $brand-primary;
+              }
               @include bp-at-least($bp-med) {
-                background-color: $grey-dark;
-                border-bottom: none;
+                background-color: $charcoal;
                 text-indent: 0;
               }
             }
@@ -189,6 +190,7 @@
   padding: 10px 35px 16px 0px;
   float: right;
   margin-right: 2em;
+  margin-top: 0.25em;
   @include bp-at-least($bp-med) {
     display:none;
   }
