@@ -52,6 +52,7 @@
 /// ARTIST HIGHLIGHTS /////////////////////////////////////////////////
 .artist-highlight {
   @include col(1);
+  @include cf();
   margin: 0;
   padding: 6em 0;
   @include bp-at-least($bp-med) {
@@ -100,6 +101,84 @@
 }
 .artist-link{
   @include font-size(1.1);
+  @extend .black-btn;
+  margin: 1em 0;
+}
+
+///// UPCOMING EVENT BANNER ///////////////////////////////
+.upcoming-highlight {
+  @include col(1);
+  @include cf();
+  margin: 0;
+  background: url(../img/upcoming-banner-img.jpg) 25% 25% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3em 0;
+  @include bp-between($tp-small-med, $bp-med) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  @include bp-at-least($bp-med) {
+    background: url(../img/upcoming-banner-img.jpg) bottom center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4em 3em;
+  }
+}
+.upcoming-col {
+  @include col(1);
+  padding: 2em;
+  &.right {
+    text-align: left;
+  }
+  @include bp-at-least($bp-med) {
+    @include col(1/2);
+    &.right {
+      text-align: right;
+    }
+  }
+}
+.upcoming-headline {
+  @include font-size(4.0);
+  @extend .georgia1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  color: $white;
+  font-weight: bold;
+}
+.upcoming-subhead {
+  @include font-size(3.0);
+  @extend .georgia1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 1em 0;
+  color: $white;
+  padding: 0.5em 0;
+  border-bottom: 1px solid $white;
+  border-top: 1px solid $white;
+  @include bp-at-least($bp-med) {
+    width: 75%;
+  }
+}
+.guest-name {
+  @include font-size(2.8);
+  @extend .lato2;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  color: $white;
+}
+.guest-timeline {
+  @include font-size(2.4);
+  @extend .lato1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  color: $white;
+}
+.guest-btn {
+  @include font-size(1.2);
   @extend .black-btn;
   margin: 1em 0;
 }
