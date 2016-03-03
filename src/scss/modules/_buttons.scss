@@ -1,9 +1,38 @@
+/// GLOBAL RULES ////////////////////
 .btn:focus {
   outline: none;
 }
-
 a,
 .btn,
 button {
   transition: all 0.5s ease;
+}
+
+/// MAIN BUTTONS ///////////////////
+.main-btn {
+  @extend .georgia1;
+  padding: 2em 3em;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.yellow-btn {
+  @extend .main-btn;
+  background: $brand-primary;
+  color: $black;
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
+.black-btn {
+  @extend .main-btn;
+  background: $black;
+  color: $white;
+  &:hover {
+    background: $brand-primary;
+    color: $black;
+  }
 }

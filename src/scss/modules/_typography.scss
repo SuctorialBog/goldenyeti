@@ -11,7 +11,7 @@ html {
 }
 
 body{
-  @include font-size(1.4);
+  @include font-size(1.6);
   @include line-height(2);
   color: $off-black;
   font-family: $sans-serif;
@@ -92,6 +92,10 @@ h6{
   .open5{
     font-family: $sans-serif;
     font-weight: 800;
+  }
+  .georgia1{
+    font-family: $serif-plain;
+    font-weight: 400;
   }
   .crimson1{
     font-family: $serif;
