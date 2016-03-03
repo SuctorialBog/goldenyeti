@@ -11,13 +11,22 @@ button {
 /// MAIN BUTTONS ///////////////////
 .main-btn {
   @extend .georgia1;
-  padding: 2em 3em;
+  padding: 1em 2em;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
+.yellow-btn-hero {
+  @extend .main-btn;
+  background: $brand-primary;
+  color: $black;
+  padding: 2em 3em;
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
 .yellow-btn {
   @extend .main-btn;
   background: $brand-primary;

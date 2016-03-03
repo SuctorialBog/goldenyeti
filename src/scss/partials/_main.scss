@@ -46,7 +46,7 @@
 }
 .hero-btn {
   @include font-size(1.4);
-  @extend .yellow-btn;
+  @extend .yellow-btn-hero;
 }
 
 /// ARTIST HIGHLIGHTS /////////////////////////////////////////////////
@@ -54,4 +54,52 @@
   @include col(1);
   margin: 0;
   padding: 6em 0;
+  @include bp-at-least($bp-med) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+.artist-col {
+  @include col(1);
+  padding: 2em;
+  text-align: center;
+  @include bp-between($tp-small-med, $bp-med) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  @include bp-at-least($bp-med) {
+    @include col(1/3);
+    padding: 1.5em;
+    text-align: center;
+  }
+}
+.artist-thumb {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $black;
+}
+.artist-name {
+  @include font-size(2.4);
+  @include line-height(3.3);
+  @extend .crimson1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: block;
+  @include bp-between(924px,1174px) {
+    @include font-size(1.8);
+    @include line-height(2.5);
+  }
+}
+.artist-summary {
+  @include font-size(1.4);
+  @include line-height(2.1);
+  @extend .open2;
+  text-align: left;
+}
+.artist-link{
+  @include font-size(1.1);
+  @extend .black-btn;
+  margin: 1em 0;
 }
