@@ -9,7 +9,7 @@
   z-index: 2;
   opacity: 0;
   max-height: 0;
-  @include bp-at-least($bp-med) {
+  @include bp-at-least($tp-med-lrg) {
     width: 60%;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@
     background-color: $charcoal;
     opacity: 1;
     max-height: none;
-    @include bp-at-least($bp-med) {
+    @include bp-at-least($tp-med-lrg) {
       background-color: transparent;
     }
   }
@@ -38,7 +38,7 @@
     @include span(1);
     padding: 0;
     margin: 0;
-    @include bp-at-least($bp-med) {
+    @include bp-at-least($tp-med-lrg) {
       &.main {
         width: auto;
         float: right;
@@ -51,7 +51,7 @@
       display: block;
       float: left;
       clear: both;
-      @include bp-at-least($bp-med) {
+      @include bp-at-least($tp-med-lrg) {
         width: auto;
         display: inline-block;
         float: none;
@@ -68,7 +68,7 @@
         border-bottom: 1px solid darken($charcoal,10%);
         background-color: $charcoal;
         text-decoration: none;
-        @include bp-at-least($bp-med) {
+        @include bp-at-least($tp-med-lrg) {
           @include font-size(1.6);
           display: block;
           padding: 0;
@@ -84,7 +84,7 @@
         &:hover{
           color: $brand-primary;
           text-decoration: none;
-          @include bp-at-least($bp-med) {
+          @include bp-at-least($tp-med-lrg) {
             color: $brand-primary;
             text-decoration: none;
           }
@@ -92,7 +92,7 @@
         &.dropdown {
           &.open{
             color: $grey;
-            @include bp-at-least($bp-med) {
+            @include bp-at-least($tp-med-lrg) {
               color: $brand-primary;
             }
             &:after {
@@ -100,7 +100,7 @@
               font-family: 'FontAwesome';
               font-weight: normal;
               margin-left: 5px;
-              @include bp-at-least($bp-med) {
+              @include bp-at-least($tp-med-lrg) {
                 content: '\f0d7';
                 font-family: 'FontAwesome';
                 font-weight: normal;
@@ -123,7 +123,7 @@
         // transition:visibility 0s linear 0.2s, opacity 0.2s linear;
         transition: all 0.3s ease;
         position: relative;
-        @include bp-at-least($bp-med) {
+        @include bp-at-least($tp-med-lrg) {
           opacity: 0;
           position: absolute;
           background-color: $black;
@@ -134,12 +134,12 @@
           width: 200px;
         }
         li {
-          @include bp-at-least($bp-med) {
+          @include bp-at-least($tp-med-lrg) {
             width: 100%;
             clear: both;
           }
           a {
-            @include bp-at-least($bp-med) {
+            @include bp-at-least($tp-med-lrg) {
               width: 100%;
               @include font-size(1.6);
               background-color: $charcoal;
@@ -157,7 +157,7 @@
           max-height: none;
           // transition:visibility 0s linear 0.2s, opacity 0.2s linear;
           transition: all 0.5s ease;
-          @include bp-at-least($bp-med) {
+          @include bp-at-least($tp-med-lrg) {
             opacity:1;
             background: $black;
             z-index: 99;
@@ -172,7 +172,7 @@
                 color: $charcoal;
                 border-bottom: 1px solid $brand-primary;
               }
-              @include bp-at-least($bp-med) {
+              @include bp-at-least($tp-med-lrg) {
                 background-color: $charcoal;
                 text-indent: 0;
               }
@@ -191,7 +191,7 @@
   float: right;
   margin-right: 2em;
   margin-top: 0.25em;
-  @include bp-at-least($bp-med) {
+  @include bp-at-least($tp-med-lrg) {
     display:none;
   }
 }
