@@ -1,0 +1,67 @@
+/// FOOTER BANNER /////////////////////////////
+.footer {
+  @include col(1);
+  margin: 0;
+  padding: 3.25em 0 0;
+}
+.footer-col {
+  @include col(1);
+  padding: 0 2em;
+  @include bp-at-least($bp-med) {
+    @include col(1/2,0,2);
+    &.right {
+      float: right;
+    }
+  }
+}
+.footer-copy {
+    @include col(1);
+    @include cf();
+    @include font-size(1.0);
+    @include line-height(1.7);
+    padding: 3em;
+}
+.footer-logo {
+  display: block;
+  max-width: 250px;
+  line-height: 100%;
+  margin-bottom: 3em;
+  @include bp-at-least($bp-med) {
+    margin-bottom: 0;
+  }
+}
+.footer-info-col {
+  @include col(1);
+  padding: 0 2em;
+  @include bp-at-least($bp-med) {
+    @include col(1/2);
+  }
+}
+.footer-info-headline {
+  @include font-size(1.8);
+  @extend .georgia1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+  color: $charcoal;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid $charcoal;
+}
+.footer-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0;
+  margin-bottom: 1.5em;
+  @include bp-at-least($bp-med) {
+    margin-bottom: 0;
+  }
+}
+.footer-link {
+  @include font-size(1.4);
+  @extend .open2;
+  color: $charcoal;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

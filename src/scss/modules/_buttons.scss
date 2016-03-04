@@ -1,7 +1,10 @@
 /// GLOBAL RULES ////////////////////
-.btn:focus {
+.btn:focus,
+button:focus,
+a:focus {
   outline: none;
 }
+
 a,
 .btn,
 button {

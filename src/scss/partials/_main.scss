@@ -119,9 +119,8 @@
     padding-right: 20%;
   }
   @include bp-at-least($bp-med) {
-    background: url(../img/upcoming-banner-img.jpg) bottom center no-repeat;
+    background: url(../img/upcoming-banner-img.jpg) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     padding: 4em 3em;
   }
 }
@@ -181,4 +180,108 @@
   @include font-size(1.2);
   @extend .black-btn;
   margin: 1em 0;
+}
+///// INFO BLOCKS ////////////////////////////////////
+.info-banner {
+  @include col(1);
+  @include cf();
+  margin: 0;
+  padding: 3em 0;
+  @include bp-between($tp-small-med, $bp-med) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  @include bp-at-least($bp-med) {
+    padding: 4em 3em;
+  }
+}
+.info-col {
+  @include col(1);
+  padding: 2em;
+  @include bp-at-least($bp-med) {
+    @include col(1/2);
+  }
+}
+.info-headline {
+  @include font-size(2.4);
+  @include line-height(3.1);
+  @extend .georgia1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0 0 1em;
+  color: $charcoal;
+  padding: 0.5em 0;
+  border-bottom: 1px solid $charcoal;
+}
+.info-message {
+  @include font-size(1.4);
+  @include line-height(2.1);
+  min-height: 8em;
+}
+.info-btn {
+  @include font-size(1.2);
+  @extend .black-btn;
+  margin: 1em 0;
+}
+///// SHOP BANNER ////////////////////////////////////
+.shop-banner {
+  @include col(1);
+  @include cf();
+  margin: 0;
+  background: url(../img/shop-banner-alt.jpg) 25% 25% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 2em 0;
+  @include bp-between($tp-small-med, $bp-med) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  @include bp-at-least($bp-med) {
+    background: url(../img/shop-banner-alt.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 2em 3em;
+  }
+}
+.shop-col {
+  @include col(1);
+  padding: 2em;
+  text-align: left;
+  @include bp-at-least($bp-med) {
+    @include col(1/2);
+    float: right;
+    text-align: right;
+  }
+}
+.shop-headline {
+  @include font-size(4.0);
+  @include line-height(4.7);
+  @extend .georgia1;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  color: $white;
+  font-weight: bold;
+  border-bottom: 1px solid $white;
+  padding-bottom: 0.5em;
+}
+.shop-message {
+  @include col(1);
+  @include font-size(1.4);
+  @include line-height(2.1);
+  color: $white;
+  max-width: 350px;
+  @include bp-at-least($bp-med) {
+    float: right;
+  }
+}
+.shop-btn {
+  @include font-size(1.2);
+  @extend .black-btn;
+  margin: 1em 0;
+  border: 0;
+  @include bp-at-least($bp-med) {
+    clear: both;
+    float: right;
+  }
 }
