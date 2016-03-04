@@ -2232,7 +2232,6 @@ header {
   margin: 0;
   background: url(../img/hero-img.jpg) bottom center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   min-height: 90vh;
   text-align: center;
   white-space: pre-line;
@@ -2245,6 +2244,9 @@ header {
     clear: both; }
   .top-hero:last-child {
     margin-right: 0%; }
+  @media screen and (min-width: 50.6em) {
+    .top-hero {
+      background-attachment: fixed; } }
 
 .hero-logo {
   display: block;
@@ -2399,7 +2401,6 @@ header {
   margin: 0;
   background: url(../img/upcoming-banner-img.jpg) 25% 25% no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 3em 0; }
   .upcoming-highlight:before, .upcoming-highlight:after {
     content: '';
@@ -2604,7 +2605,6 @@ header {
   margin: 0;
   background: url(../img/shop-banner-alt.jpg) 25% 25% no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 2em 0; }
   .shop-banner:before, .shop-banner:after {
     content: '';

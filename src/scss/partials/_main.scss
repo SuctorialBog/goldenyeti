@@ -4,12 +4,14 @@
   margin:0;
   background: url(../img/hero-img.jpg) bottom center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   min-height: 90vh;
   text-align: center;
   white-space: pre-line;
   line-height: 0;
   padding: 6em 0;
+  @include bp-at-least($bp-med) {
+    background-attachment: fixed;
+  }
 }
 .hero-logo {
   display: block;
@@ -112,7 +114,6 @@
   margin: 0;
   background: url(../img/upcoming-banner-img.jpg) 25% 25% no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 3em 0;
   @include bp-between($tp-small-med, $bp-med) {
     padding-left: 20%;
@@ -230,7 +231,6 @@
   margin: 0;
   background: url(../img/shop-banner-alt.jpg) 25% 25% no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: 2em 0;
   @include bp-between($tp-small-med, $bp-med) {
     padding-left: 20%;
