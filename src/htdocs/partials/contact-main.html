@@ -1,0 +1,36 @@
+<main class="main-content">
+  <section class="top-hero-sub">
+    <h1 class="sub-hero-title">Contact Us</h1>
+    <p class="sub-hero-tagline">Send us a message or use the map to find our shop. </p>
+  </section>
+
+  <section class="contact-section">
+    <h2 class="contact-sub-head">Drop Us a Message</h2>
+    <form id="contact-form" class="contact-form" action="#">
+      <fieldset class="form-top">
+        <input id="contact_name" class="form-top-input" type="text" placeholder="Full Name" value="" name="name" required/>
+        <input id="contact_email" class="form-top-input" type="text" placeholder="Email Address" value="" name="email" required/>
+        <input id="contact-phone" class="form-top-input" type="text" placeholder="Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" value="" name="phone" />
+        <input id="contact_subject" class="form-top-input" type="text" placeholder="Subject" value="" name="subject" />
+      </fieldset>
+      <fieldset class="form-message">
+        <textarea id="contact_message" placeholder="Your Message..." name="message"></textarea>
+      </fieldset>
+      <fieldset class="form-submit">
+        <a id="contact-submit" class="submit" href="#">Send Your Email</a>
+      </fieldset>
+      <div id="response">
+      </div>
+    </form>
+  </section>
+
+  <section class="contact-section">
+    <h2 class="contact-sub-head">Stop by the shop</h2>
+    <div id="map-area">
+      <div class="map" id="map_1" data-mapLat="35.925984" data-mapLon="-86.872718" data-mapZoom="9" data-mapTitle="Golden Yeti Art Collective"></div>
+    </div>
+    <div class="map-action">
+      <a class="directions-btn" href="https://www.google.com/maps/dir/''/golden+yeti+art+collective/data=!4m5!4m4!1m0!1m2!1m1!1s0x88647e4e2e4ea039:0xcc4be449834e1a2c?sa=X&ved=0ahUKEwiyj4GjxLLLAhUGQyYKHURfB-AQ9RcIeTAP">Get Directions</a>
+    </div>
+  </section>
+</main>
