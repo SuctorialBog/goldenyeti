@@ -2,7 +2,7 @@
 .top-hero {
   @include col(1);
   margin:0;
-  background: url(../img/hero-img.jpg) bottom center no-repeat;
+  background: url(../img/hero-img.jpg) top center no-repeat;
   background-size: cover;
   min-height: 90vh;
   text-align: center;
