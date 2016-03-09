@@ -287,3 +287,45 @@
 }
 
 /// SUB PAGE HEADERS ///////////////////
+
+.top-hero-sub {
+  @include col(1);
+  margin:0;
+  background: url(../img/hero-img.jpg) top center no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 0;
+  padding: 6em 0;
+  @include bp-at-least($bp-med) {
+    background-attachment: fixed;
+  }
+}
+.sub-hero-title {
+  @include font-size(5.0);
+  @extend .crimson1;
+  display: inline-block;
+  clear: both;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin: 1em 0 0.5em;
+  @include bp-at-least($bp-med) {
+    @include font-size(9.0);
+    letter-spacing: 15px;
+  }
+}
+.sub-hero-tagline {
+  @include font-size(1.7);
+  @include line-height(2.4);
+  @extend .crimson1;
+  display: inline-block;
+  letter-spacing: 2px;
+  color: $white;
+  clear: both;
+  margin: 0.5em 0 2em;
+  padding: 1em 0;
+  border-bottom: 1px solid $white;
+  border-top: 1px solid $white;
+}
