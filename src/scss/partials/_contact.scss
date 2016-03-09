@@ -22,13 +22,58 @@
     }
   }
 }
+.contact-sub-head {
+  @include font-size(3.0);
+  @extend .georgia1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 0 0.5em;
+  color: $off-black;
+}
 
 /// CONTACT FORM /////////////////////////////
-
+#contact-form {
+  .form-top,
+  .form-message,
+  .form-submit {
+    @include col(1);
+    border: 0;
+    clear: both;
+  }
+}
+.form-top-input {
+  @include col(1);
+  background: lighten($lightgrey,20%);
+  margin-bottom: 0.5em;
+  @include bp-at-least($bp-med) {
+    @include col(1/2,0,2);
+  }
+}
+#contact_message {
+  @include col(1);
+  background: lighten($lightgrey,20%);
+  margin-bottom: 0.5em;
+  min-height: 150px;
+}
+#contact-submit {
+  @include font-size(1.1);
+  @extend .black-btn;
+  margin: 1em 0;
+}
 
 
 /// MAP //////////////////////////////////////
 #map {
   @include col(1);
   height: 500px;
+}
+.map-action {
+  @include col(1);
+  text-align: center;
+  padding: 2em 0;
+}
+.directions-btn {
+  @include font-size(1.1);
+  @extend .yellow-btn;
+  margin: 1em 0;
 }

@@ -1797,7 +1797,7 @@ h6 {
   font-family: "Open Sans", arial, sans-serif;
   font-weight: 800; }
 
-.georgia1, .upcoming-headline, .upcoming-subhead, .info-headline, .shop-headline, .footer-info-headline, .main-btn, .yellow-btn-hero, .hero-btn, .yellow-btn, .black-btn, .artist-link, .guest-btn, .info-btn, .shop-btn {
+.georgia1, .upcoming-headline, .upcoming-subhead, .info-headline, .shop-headline, .footer-info-headline, .contact-sub-head, .main-btn, .yellow-btn-hero, .hero-btn, .yellow-btn, .directions-btn, .black-btn, .artist-link, .guest-btn, .info-btn, .shop-btn, #contact-submit {
   font-family: "Georgia", serif;
   font-weight: 400; }
 
@@ -2954,6 +2954,103 @@ header {
           padding-left: 20%;
           padding-right: 20%; } }
 
+.contact-sub-head {
+  font-size: 30px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 0 0.5em;
+  color: #242424; }
+
+#contact-form .form-top,
+#contact-form .form-message,
+#contact-form .form-submit {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  border: 0;
+  clear: both; }
+  #contact-form .form-top:before, #contact-form .form-top:after,
+  #contact-form .form-message:before,
+  #contact-form .form-message:after,
+  #contact-form .form-submit:before,
+  #contact-form .form-submit:after {
+    content: '';
+    display: table; }
+  #contact-form .form-top:after,
+  #contact-form .form-message:after,
+  #contact-form .form-submit:after {
+    clear: both; }
+  #contact-form .form-top:last-child,
+  #contact-form .form-message:last-child,
+  #contact-form .form-submit:last-child {
+    margin-right: 0%; }
+
+.form-top-input {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background: #f6f6f6;
+  margin-bottom: 0.5em; }
+  .form-top-input:before, .form-top-input:after {
+    content: '';
+    display: table; }
+  .form-top-input:after {
+    clear: both; }
+  .form-top-input:last-child {
+    margin-right: 0%; }
+  @media screen and (min-width: 50.6em) {
+    .form-top-input {
+      *zoom: 1;
+      float: left;
+      clear: none;
+      text-align: inherit;
+      width: 48.5%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .form-top-input:before, .form-top-input:after {
+        content: '';
+        display: table; }
+      .form-top-input:after {
+        clear: both; }
+      .form-top-input:nth-child(2n) {
+        margin-right: 0%;
+        float: right; }
+      .form-top-input:nth-child(2n + 1) {
+        clear: both; } }
+
+#contact_message {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  background: #f6f6f6;
+  margin-bottom: 0.5em;
+  min-height: 150px; }
+  #contact_message:before, #contact_message:after {
+    content: '';
+    display: table; }
+  #contact_message:after {
+    clear: both; }
+  #contact_message:last-child {
+    margin-right: 0%; }
+
+#contact-submit {
+  font-size: 11px;
+  font-size: 1.1rem;
+  margin: 1em 0; }
+
 #map {
   *zoom: 1;
   float: left;
@@ -2971,6 +3068,29 @@ header {
   #map:last-child {
     margin-right: 0%; }
 
+.map-action {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  text-align: center;
+  padding: 2em 0; }
+  .map-action:before, .map-action:after {
+    content: '';
+    display: table; }
+  .map-action:after {
+    clear: both; }
+  .map-action:last-child {
+    margin-right: 0%; }
+
+.directions-btn {
+  font-size: 11px;
+  font-size: 1.1rem;
+  margin: 1em 0; }
+
 .btn:focus,
 button:focus,
 a:focus {
@@ -2981,7 +3101,7 @@ a,
 button {
   transition: all 0.5s ease; }
 
-.main-btn, .yellow-btn-hero, .hero-btn, .yellow-btn, .black-btn, .artist-link, .guest-btn, .info-btn, .shop-btn {
+.main-btn, .yellow-btn-hero, .hero-btn, .yellow-btn, .directions-btn, .black-btn, .artist-link, .guest-btn, .info-btn, .shop-btn, #contact-submit {
   padding: 1em 2em;
   display: inline-block;
   text-decoration: none;
@@ -2996,17 +3116,17 @@ button {
     background: black;
     color: white; }
 
-.yellow-btn {
+.yellow-btn, .directions-btn {
   background: #FFCA2F;
   color: black; }
-  .yellow-btn:hover {
+  .yellow-btn:hover, .directions-btn:hover {
     background: black;
     color: white; }
 
-.black-btn, .artist-link, .guest-btn, .info-btn, .shop-btn {
+.black-btn, .artist-link, .guest-btn, .info-btn, .shop-btn, #contact-submit {
   background: black;
   color: white; }
-  .black-btn:hover, .artist-link:hover, .guest-btn:hover, .info-btn:hover, .shop-btn:hover {
+  .black-btn:hover, .artist-link:hover, .guest-btn:hover, .info-btn:hover, .shop-btn:hover, #contact-submit:hover {
     background: #FFCA2F;
     color: black; }
 
@@ -3014,11 +3134,11 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea {
-  border: 1px solid #c3c3c3;
   border-radius: 2px;
   padding: 6px;
   outline: 0;
-  font-family: "Open Sans", arial, sans-serif; }
+  font-family: "Open Sans", arial, sans-serif;
+  border: none; }
 
 textarea {
   resize: none; }

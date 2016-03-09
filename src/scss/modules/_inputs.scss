@@ -2,11 +2,11 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea{
-  border: 1px solid $lightgrey;
   border-radius: $corners;
   padding: 6px;
   outline: 0;
   font-family: $sans-serif;
+  border: none;
 }
 textarea {
   resize: none;
