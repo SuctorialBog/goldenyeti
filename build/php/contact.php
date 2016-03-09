@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = 'skylareverett86@gmail.com'; // Email
+$admin_email = 'goldenyetiart@gmail.com '; // Email
 $message_min_length = 5; // Min Message Length
 
 
@@ -27,7 +27,6 @@ class Contact_Form{
 		$this->response_html = '';
 	}
 
-
 	private function validateEmail(){
 		$regex = '/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i';
 
@@ -36,11 +35,8 @@ class Contact_Form{
 		} else {
 			$string = preg_replace($regex, '', $this->email);
 		}
-
 		return empty($string) ? true : false;
 	}
-
-
 	private function validateFields(){
 		// Check name
 		if(!$this->name)
@@ -70,7 +66,6 @@ class Contact_Form{
 			$this->response_status = 0;
 		}
 	}
-
 
 	private function sendEmail(){
 		$mail = mail($this->email_admin, $this->subject, $this->message,

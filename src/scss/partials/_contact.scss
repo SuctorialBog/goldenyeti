@@ -1,0 +1,34 @@
+/// MAIN STYLES ///////////////////////////////
+.contact-section {
+  @include col(1);
+  padding: 2em;
+  @include bp-at-least($bp-med) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  &.map-wrapper {
+    padding: 2em 0;
+    @include bp-at-least($bp-med) {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    .contact-sub-head {
+      padding-left: 2em;
+      padding-right: 2em;
+      @include bp-at-least($bp-med) {
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+    }
+  }
+}
+
+/// CONTACT FORM /////////////////////////////
+
+
+
+/// MAP //////////////////////////////////////
+#map {
+  @include col(1);
+  height: 500px;
+}
