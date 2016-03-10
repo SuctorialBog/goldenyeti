@@ -1,0 +1,140 @@
+/// MAIN STYLES ///////////////////////////////
+.top-hero-artist {
+  @include col(1);
+  margin: 0;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 0;
+  padding: 1em 0;
+  &.jeff {
+    background: url(../img/jeff-artist-banner.jpg) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &.brad {
+    background: url(../img/brad-artist-banner.jpg) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &.caitlyn {
+    background: url(../img/caitlyn-artist-banner.jpg) 50% 50% no-repeat;
+    background-size: cover;
+  }
+}
+.artist-hero-title {
+  @include font-size(5.0);
+  @extend .crimson1;
+  display: inline-block;
+  clear: both;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin: 1em 0 0.5em;
+  @include bp-at-least($bp-med) {
+    @include font-size(9.0);
+    letter-spacing: 15px;
+  }
+}
+.artist-social-list {
+  display: inline-block;
+  clear: both;
+  margin: 0.5em 0 2em;
+  padding: 1em 0;
+  border-bottom: 1px solid $white;
+  border-top: 1px solid $white;
+  list-style: none;
+  @include bp-at-least($bp-med) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  li {
+    float: left;
+    margin-right: 1em;
+    @include bp-at-least($bp-med) {
+      margin-right: 2em;
+    }
+    .artist-social-link {
+      display: block;
+      background: $brand-primary;
+      color: $off-black;
+      border-radius: 50%;
+      width: 3em;
+      height: 3em;
+      .fa {
+        line-height: 1.5;
+      }
+      &:hover {
+        background: $white;
+        color: $off-black;
+      }
+    }
+  }
+}
+
+/// BIO BANNER ///////////////////////////////
+.bio-section {
+  @include col(1);
+  @include cf();
+  margin: 0;
+  padding: 3em 0;
+  @include bp-at-least($bp-med) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+.bio-col {
+  @include col(1);
+  padding: 0 2em;
+  text-align: center;
+  &.right {
+    text-align: left;
+  }
+  @include bp-between($tp-small-med, $bp-med) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  @include bp-at-least($bp-med) {
+    @include col(1/2);
+    padding: 1.5em;
+    text-align: center;
+  }
+  .bio-img {
+    display: block;
+    max-width: 100%;
+    @include bp-at-least($bp-med) {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+  }
+}
+.bio-head{
+  @include font-size(2.8);
+  @extend .crimson1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 0 0.5em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid $off-black;
+}
+.bio-description {
+  @include font-size(1.6);
+  @include line-height(2.3);
+  @extend .open2;
+}
+.bio-email-btn {
+  @include font-size(1.4);
+  @extend .yellow-btn;
+  margin: 1em 0;
+}
+
+/// PORTFOLIO ///////////////////////////////
+.artist-work {
+  @include col(1);
+  @include cf();
+  margin: 0;
+  padding: 6em 0;
+  background: $off-black;
+  @include bp-at-least($bp-med) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
