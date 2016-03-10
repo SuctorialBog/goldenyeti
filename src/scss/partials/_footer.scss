@@ -63,5 +63,14 @@
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    &.file-size {
+      text-decoration: none;
+    }
   }
+}
+.file-size {
+  @include font-size(1.0);
+  @extend .open2;
+  color: $charcoal;
+  margin-left: 0.5em;
 }

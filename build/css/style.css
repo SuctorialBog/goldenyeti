@@ -1781,7 +1781,7 @@ h6 {
   font-family: "Open Sans", arial, sans-serif;
   font-weight: 300; }
 
-.open2, .artist-summary, .footer-link {
+.open2, .artist-summary, .footer-link, .file-size, .upcoming-time-head, .upcoming-description {
   font-family: "Open Sans", arial, sans-serif;
   font-weight: 400; }
 
@@ -1797,7 +1797,7 @@ h6 {
   font-family: "Open Sans", arial, sans-serif;
   font-weight: 800; }
 
-.georgia1, .upcoming-headline, .upcoming-subhead, .info-headline, .shop-headline, .footer-info-headline, .contact-sub-head, .main-btn, .yellow-btn-hero, .hero-btn, .yellow-btn, .directions-btn, .black-btn, .artist-link, .guest-btn, .info-btn, .shop-btn, #contact-submit {
+.georgia1, .upcoming-headline, .upcoming-subhead, .info-headline, .shop-headline, .footer-info-headline, .contact-sub-head, .upcoming-head, .main-btn, .yellow-btn-hero, .hero-btn, .yellow-btn, .directions-btn, .black-btn, .artist-link, .guest-btn, .info-btn, .shop-btn, #contact-submit {
   font-family: "Georgia", serif;
   font-weight: 400; }
 
@@ -2919,6 +2919,14 @@ header {
   text-decoration: none; }
   .footer-link:hover {
     text-decoration: underline; }
+    .footer-link:hover.file-size {
+      text-decoration: none; }
+
+.file-size {
+  font-size: 10px;
+  font-size: 1rem;
+  color: #393939;
+  margin-left: 0.5em; }
 
 .contact-section {
   *zoom: 1;
@@ -3098,6 +3106,73 @@ header {
   font-size: 11px;
   font-size: 1.1rem;
   margin: 1em 0; }
+
+.main-section {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  padding: 2em; }
+  .main-section:before, .main-section:after {
+    content: '';
+    display: table; }
+  .main-section:after {
+    clear: both; }
+  .main-section:last-child {
+    margin-right: 0%; }
+  @media screen and (min-width: 50.6em) {
+    .main-section {
+      padding-left: 20%;
+      padding-right: 20%; } }
+
+.secondary-img-banner {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin: 0;
+  padding: 0; }
+  .secondary-img-banner:before, .secondary-img-banner:after {
+    content: '';
+    display: table; }
+  .secondary-img-banner:after {
+    clear: both; }
+  .secondary-img-banner:last-child {
+    margin-right: 0%; }
+  .secondary-img-banner .banner-img {
+    background-size: cover;
+    display: block;
+    max-width: 100%; }
+
+.upcoming-head {
+  font-size: 30px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 0 0.5em;
+  color: #242424; }
+
+.upcoming-time-head {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-style: italic;
+  margin: 0 0 0.5em;
+  color: #FFCA2F; }
+
+.upcoming-description {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 21px;
+  line-height: 2.1rem;
+  margin: 0 0 0.5em;
+  color: #242424;
+  max-width: 625px; }
 
 .btn:focus,
 button:focus,
