@@ -1,7 +1,8 @@
 var $, whichTransitionEvent;
 
 $ = require('jquery');
-var slidebars = require('slidebars');
+// var slidebars = require('slidebars');
+var Instafeed = require('instafeed');
 
 console.log('js loaded');
 
@@ -37,15 +38,46 @@ $(function() {
 
   /// SLIDEBARS TEST/////
 
-  $.slidebars({
-    siteClose: true, // true or false
-    disableOver: 480, // integer or false
-    hideControlClasses: true, // true or false
-    scrollLock: false // true or false
-  });
+  // $.slidebars({
+  //   siteClose: true, // true or false
+  //   disableOver: 480, // integer or false
+  //   hideControlClasses: true, // true or false
+  //   scrollLock: false // true or false
+  // });
 
+  /// Instafeed Stuff ///////
 
-    /// DROPDOWN NAV CLASS /////
+  var jeffFeed = new Instafeed({
+        get: 'user',
+        userId: '144571280',
+        target: '#jeff-portfolio',
+        clientId: 'c59949355e1943a7bed01057b1259614',
+        accessToken: 'YOUR_ACCESS_TOKEN',
+        template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    jeffFeed.run();
+
+    var bradFeed = new Instafeed({
+          get: 'user',
+          userId: '27662183',
+          target: '#brad-portfolio',
+          clientId: 'c59949355e1943a7bed01057b1259614',
+          accessToken: 'YOUR_ACCESS_TOKEN',
+          template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+      });
+      bradFeed.run();
+
+      var caitlynFeed = new Instafeed({
+            get: 'user',
+            userId: '52239635',
+            target: '#caitlyn-portfolio',
+            clientId: 'c59949355e1943a7bed01057b1259614',
+            accessToken: 'YOUR_ACCESS_TOKEN',
+            template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+        });
+        caitlynFeed.run();
+
+  /// DROPDOWN NAV CLASS /////
 
   $(".dropdown").on("click", function(e) {
     e.preventDefault;
