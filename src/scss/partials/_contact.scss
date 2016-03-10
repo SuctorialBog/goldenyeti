@@ -60,6 +60,12 @@
   @extend .black-btn;
   margin: 1em 0;
 }
+#response {
+  @include font-size(1.4);
+  @include line-height(2.1);
+  color: $off-black;
+  margin: 1em 0;
+}
 
 
 /// MAP //////////////////////////////////////

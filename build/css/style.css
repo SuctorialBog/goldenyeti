@@ -3051,6 +3051,14 @@ header {
   font-size: 1.1rem;
   margin: 1em 0; }
 
+#response {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 21px;
+  line-height: 2.1rem;
+  color: #242424;
+  margin: 1em 0; }
+
 #map {
   *zoom: 1;
   float: left;
