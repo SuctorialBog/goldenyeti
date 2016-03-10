@@ -4183,6 +4183,12 @@ input[type=submit] {
 .hidden {
   display: none; }
 
+.tel-link {
+  color: #242424;
+  text-decoration: none; }
+  .tel-link:hover {
+    color: #FFCA2F; }
+
 html {
   box-sizing: border-box; }
 

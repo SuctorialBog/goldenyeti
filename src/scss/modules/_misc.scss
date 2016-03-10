@@ -18,6 +18,13 @@
 .hidden{
   display: none;
 }
+.tel-link {
+	color: $off-black;
+	text-decoration: none;
+	&:hover {
+		color: $brand-primary;
+	}
+}
 
 html {
   box-sizing: border-box;
