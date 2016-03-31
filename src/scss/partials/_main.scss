@@ -99,7 +99,9 @@
   @include font-size(1.4);
   @include line-height(2.1);
   @extend .open2;
-  text-align: left;
+  text-align: center;
+  padding: 0 2em;
+  min-height: 45px;
 }
 .artist-link{
   @include font-size(1.1);
