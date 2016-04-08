@@ -50,9 +50,11 @@ $(function() {
   var jeffFeed = new Instafeed({
         get: 'user',
         userId: '144571280',
-        target: '#jeff-portfolio',
+        // The dom had no clue wtf to stick the content jquery to the rescue!
+        target: $('#jeff-portfolio')[0],
         clientId: 'c59949355e1943a7bed01057b1259614',
-        accessToken: 'YOUR_ACCESS_TOKEN',
+        // Got it from http://instagram.pixelunion.net/ Generate your own.
+        accessToken: '849719.1677ed0.0346868232c04aba9d27414317c7ec56',
         template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
     });
     jeffFeed.run();
@@ -60,9 +62,11 @@ $(function() {
     var bradFeed = new Instafeed({
           get: 'user',
           userId: '27662183',
-          target: '#brad-portfolio',
+          // The dom had no clue wtf to stick the content jquery to the rescue!
+          target: $('#brad-portfolio')[0],
           clientId: 'c59949355e1943a7bed01057b1259614',
-          accessToken: 'YOUR_ACCESS_TOKEN',
+          // Got it from http://instagram.pixelunion.net/ Generate your own.
+          accessToken: '849719.1677ed0.0346868232c04aba9d27414317c7ec56',
           template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
       });
       bradFeed.run();
@@ -70,9 +74,11 @@ $(function() {
       var caitlynFeed = new Instafeed({
             get: 'user',
             userId: '52239635',
-            target: '#caitlyn-portfolio',
+            // The dom had no clue wtf to stick the content jquery to the rescue!
+            target: $('#caitlyn-portfolio')[0],
             clientId: 'c59949355e1943a7bed01057b1259614',
-            accessToken: 'YOUR_ACCESS_TOKEN',
+            // Got it from http://instagram.pixelunion.net/ Generate your own.
+            accessToken: '849719.1677ed0.0346868232c04aba9d27414317c7ec56',
             template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
         });
         caitlynFeed.run();
