@@ -5,7 +5,7 @@
 This is for the Golden Yeti Art Collective website development.
 
 ### How do I even?
-This assumes you have Node, Bower, RVM, SASS and Compass already installed. If not [look here](https://gist.github.com/jboshers/9f870af4726f017d6c67).
+This assumes you have Node, Bower, RVM, SASS and Compass already installed. If not [look here](https://gist.github.com/jboshers/9f870af4726f017d6c67). ** Thanks Jeff
 
 * Git clone this repo or download it.
 * Remove git origins from this project.
@@ -22,5 +22,7 @@ This assumes you have Node, Bower, RVM, SASS and Compass already installed. If n
 ### Contribution guidelines
 * Submit code on your own branch. Make a pull request.
 
-### Who's responsible for this monstrosity?
+### Who would do something like this?
 Skylar Everett
+
+** Adapted from Jeff Boshers 'gulp-starter'
