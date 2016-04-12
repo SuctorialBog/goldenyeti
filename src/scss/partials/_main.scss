@@ -96,8 +96,8 @@
   }
 }
 .artist-summary {
-  @include font-size(1.4);
-  @include line-height(2.1);
+  @include font-size(1.8);
+  @include line-height(2.5);
   @extend .open2;
   text-align: center;
   padding: 0 2em;
