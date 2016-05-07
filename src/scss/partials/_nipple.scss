@@ -1,0 +1,42 @@
+/// MAIN STYLES ///////////////////////////////
+.main-section {
+  @include col(1);
+  padding: 2em;
+  @include bp-at-least($bp-med) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+.secondary-img-banner {
+  @include col(1);
+  margin: 0;
+  padding: 0;
+  .banner-img {
+    background-size: cover;
+    display: block;
+    max-width: 100%;
+  }
+}
+.nipple-head {
+  @include font-size(3.0);
+  @extend .georgia1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 0 0.5em;
+  color: $off-black;
+}
+.nipple-time-head {
+  @include font-size(2.4);
+  @extend .open2;
+  font-style: italic;
+  margin: 0 0 0.5em;
+  color: $brand-primary;
+}
+.nipple-description {
+  @include font-size(1.4);
+  @include line-height(2.1);
+  @extend .open2;
+  margin: 0 0 0.5em;
+  color: $off-black;
+  max-width: 625px;
+}
