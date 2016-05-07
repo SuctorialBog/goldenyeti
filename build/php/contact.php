@@ -8,7 +8,7 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = ' skylareverett86@gmail.com '; // Email "goldenyetiart@gmail.com"
+$admin_email = ' shop@goldenyetiart.com '; // Email "goldenyetiart@gmail.com"
 $message_min_length = 5; // Min Message Length
 
 
