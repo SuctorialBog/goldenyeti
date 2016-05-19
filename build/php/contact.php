@@ -8,9 +8,8 @@ header('Cache-Control: no-cache, must-revalidate');
 header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
-$admin_email = ' shop@goldenyetiart.com '; // Email "goldenyetiart@gmail.com"
+$admin_email = 'goldenyetiart@gmail.com'; // Email "shop@goldenyetiart.com"
 $message_min_length = 5; // Min Message Length
-
 
 class Contact_Form{
 	function __construct($details, $email_admin, $message_min_length){
@@ -18,7 +17,7 @@ class Contact_Form{
 		$this->name = stripslashes($details['name']);
 		$this->email = trim($details['email']);
 		$this->subject = 'Contact from Your Website'; // Subject
-		$this->message = stripslashes($details['message']);
+		$this->message = stripslashes('From: ' . $this->name . ' <' . $this->email . ">\n\n" . $details['message']);
 
 		$this->email_admin = $email_admin;
 		$this->message_min_length = $message_min_length;
@@ -69,9 +68,9 @@ class Contact_Form{
 
 	private function sendEmail(){
 		$mail = mail($this->email_admin, $this->subject, $this->message,
-			 "From: ".$this->name." <".$this->email.">\r\n"
-			."Reply-To: ".$this->email."\r\n"
-		."X-Mailer: PHP/" . phpversion());
+			 "From: Website Form <adminsky@clay.dreamhost.com>\r\n");
+			/*."Reply-To: ".$this->email."\r\n"
+		."X-Mailer: PHP/" . phpversion());*/
 
 		if($mail)
 		{
