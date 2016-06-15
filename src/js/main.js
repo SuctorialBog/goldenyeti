@@ -48,37 +48,37 @@ $(function() {
 	/// Instafeed Stuff ///////
 
 	var jeffFeed = new Instafeed({
-		sortBy: 'most-liked',
+		sortBy: 'most-recent',
 		get: 'user',
 		userId: '144571280',
     limit: 32,
 		target: $('#jeff-portfolio')[0],
 		clientId: 'c59949355e1943a7bed01057b1259614',
-		accessToken: '849719.1677ed0.0346868232c04aba9d27414317c7ec56',
+		accessToken: '144571280.c599493.5b3c7f5ab647447284a042925b4f3e5b',
 		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
 	});
 	jeffFeed.run();
 
 	var bradFeed = new Instafeed({
-		sortBy: 'most-liked',
+		sortBy: 'most-recent',
 		get: 'user',
 		userId: '27662183',
     limit: 32,
 		target: $('#brad-portfolio')[0],
 		clientId: 'c59949355e1943a7bed01057b1259614',
-		accessToken: '849719.1677ed0.0346868232c04aba9d27414317c7ec56',
+		accessToken: '27662183.c599493.abb8ec4f9cef4be2856489255f5b004b',
 		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
 	});
 	bradFeed.run();
 
 	var caitlynFeed = new Instafeed({
-		sortBy: 'most-liked',
+		sortBy: 'most-recent',
 		get: 'user',
 		userId: '52239635',
     limit: 32,
 		target: $('#caitlyn-portfolio')[0],
 		clientId: 'c59949355e1943a7bed01057b1259614',
-		accessToken: '849719.1677ed0.0346868232c04aba9d27414317c7ec56',
+		accessToken: '52239635.c599493.958f3fd487eb4ac7b0ea4a4fa25ddd2f',
 		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
 	});
 	caitlynFeed.run();
