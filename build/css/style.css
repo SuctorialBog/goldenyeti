@@ -9,11 +9,9 @@
   word-break: break-all;
   word-break: break-word;
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto; }
 
@@ -29,12 +27,10 @@
 .vert-align {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .vert-parent {
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
 /* ==========================================================================
@@ -422,7 +418,7 @@ th {
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -497,56 +493,39 @@ th {
   margin-left: .3em; }
 
 .fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear; }
 
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8); }
-
-@-webkit-keyframes fa-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
 
 @keyframes fa-spin {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-  -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-  -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
@@ -2785,8 +2764,7 @@ header {
   width: 100%;
   left: -200%;
   top: 65px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   background-color: #393939;
   transition: left 0.5s ease;
   position: absolute;
@@ -2798,11 +2776,9 @@ header {
       width: 60%;
       top: 0;
       left: 0;
-      -webkit-transform: translateY(3px);
-          -ms-transform: translateY(3px);
-              transform: translateY(3px);
-      -webkit-transform-style: preserve-3d;
-              transform-style: preserve-3d;
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+      transform-style: preserve-3d;
       position: relative;
       z-index: 1;
       background-color: transparent;
@@ -2811,8 +2787,7 @@ header {
       max-height: none; } }
   #main-nav.open {
     left: 0;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     background-color: #393939;
     opacity: 1;
     max-height: none; }
@@ -2916,11 +2891,9 @@ header {
             background-color: black;
             top: 1em;
             left: 0em;
-            -webkit-transform: translateY(22px);
-                -ms-transform: translateY(22px);
-                    transform: translateY(22px);
-            -webkit-transform-style: preserve-3d;
-                    transform-style: preserve-3d;
+            -ms-transform: translateY(22px);
+                transform: translateY(22px);
+            transform-style: preserve-3d;
             width: 200px; } }
         @media screen and (min-width: 61.375em) {
           #main-nav ul li ul.submenu li {
@@ -2995,14 +2968,12 @@ header {
   top: 0; }
 
 #nav-toggle.active span:before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
 
 #nav-toggle.active span:after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
 
 .top-hero {
   *zoom: 1;
@@ -3125,7 +3096,7 @@ header {
       float: left;
       clear: none;
       text-align: inherit;
-      width: 31.33333%;
+      width: 22.75%;
       margin-left: 0%;
       margin-right: 3%;
       padding: 1.5em;
@@ -3155,16 +3126,16 @@ header {
   display: block; }
   @media screen and (min-width: 924px) and (max-width: 1174px) {
     .artist-name {
-      font-size: 18px;
-      font-size: 1.8rem;
+      font-size: 28px;
+      font-size: 2.8rem;
       line-height: 25px;
       line-height: 2.5rem; } }
 
 .artist-summary {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 25px;
-  line-height: 2.5rem;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  line-height: 2rem;
   text-align: center;
   padding: 0 2em;
   min-height: 55px; }
@@ -4086,6 +4057,9 @@ header {
     background-size: cover; }
   .top-hero-artist.caitlyn {
     background: url(../img/caitlyn-artist-banner.jpg) 50% 50% no-repeat;
+    background-size: cover; }
+  .top-hero-artist.mary {
+    background: url(../img/mary-artist-banner.jpg) 50% 50% no-repeat;
     background-size: cover; }
 
 .artist-hero-title {

@@ -18,6 +18,10 @@
     background: url(../img/caitlyn-artist-banner.jpg) 50% 50% no-repeat;
     background-size: cover;
   }
+  &.mary {
+    background: url(../img/mary-artist-banner.jpg) 50% 50% no-repeat;
+    background-size: cover;
+  }
 }
 .artist-hero-title {
   @include font-size(5.0);

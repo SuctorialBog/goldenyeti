@@ -83,6 +83,18 @@ $(function() {
 	});
 	caitlynFeed.run();
 
+	var maryFeed = new Instafeed({
+		sortBy: 'most-recent',
+		get: 'user',
+		userId: '18964608',
+    limit: 32,
+		target: $('#mary-portfolio')[0],
+		clientId: 'c59949355e1943a7bed01057b1259614',
+		accessToken: '18964608.c599493.55464b4033a347828c8d71dc0a20e6cc',
+		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+	});
+	maryFeed.run();
+
 	/// DROPDOWN NAV CLASS /////
 
 	$(".dropdown").on("click", function(e) {
