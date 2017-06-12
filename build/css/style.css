@@ -3904,7 +3904,8 @@ header {
   .secondary-img-banner .banner-img {
     background-size: cover;
     display: block;
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%; }
 
 .upcoming-head {
   font-size: 30px;
