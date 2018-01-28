@@ -22,6 +22,10 @@
     background: url(../img/mary-artist-banner.jpg) 50% 50% no-repeat;
     background-size: cover;
   }
+  &.murray {
+    background: url(../img/murray-artist-banner.jpg) 50% 50% no-repeat;
+    background-size: cover;
+  }
 }
 .artist-hero-title {
   @include font-size(5.0);

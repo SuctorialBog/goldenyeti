@@ -4062,6 +4062,9 @@ header {
   .top-hero-artist.mary {
     background: url(../img/mary-artist-banner.jpg) 50% 50% no-repeat;
     background-size: cover; }
+  .top-hero-artist.murray {
+    background: url(../img/murray-artist-banner.jpg) 50% 50% no-repeat;
+    background-size: cover; }
 
 .artist-hero-title {
   font-size: 50px;
