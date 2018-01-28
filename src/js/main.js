@@ -148,6 +148,18 @@ $(function() {
 	});
 	maryFeed.run();
 
+	var murrayFeed = new Instafeed({
+		sortBy: 'most-recent',
+		get: 'user',
+		userId: '36382497',
+    limit: 32,
+		target: $('#murray-portfolio')[0],
+		clientId: 'c59949355e1943a7bed01057b1259614',
+		accessToken: '36382497.c599493.9321a2f067d54ae58c183e14fc7c342c',
+		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+	});
+	murrayFeed.run();
+
 	/// DROPDOWN NAV CLASS /////
 
 	$(".dropdown").on("click", function(e) {

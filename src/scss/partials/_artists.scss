@@ -162,22 +162,19 @@
 }
 #jeff-portfolio,
 #brad-portfolio,
-#caitlyn-portfolio {
+#caitlyn-portfolio,
+#mary-portfolio,
+#murray-portfolio {
   @include col(1);
 }
 .portfolio-img {
-  width: 150px;
-  height: 150px;
-  margin: 0 1em 1em 0;
-  display: block;
-  float: left;
+  @include col(1,1);
   border: 3px solid $white;
+  margin-bottom: 3em;
   img {
-    max-width: 100%;
+    width: 100%;
   }
   @include bp-at-least($bp-med) {
-    width: 150px;
-    height: 150px;
-    margin: 0 1em 1em 0;
+    @include col(1/5,0,5);
   }
 }
