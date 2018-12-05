@@ -11,7 +11,8 @@
     "bootstrap": "./src/js/vendor/bootstrap.js",
     "owlCarousel": "./bower_components/owlcarousel/owl-carousel/owl.carousel.js",
     "slidebars": "./bower_components/slidebars/distribution/0.10.2/slidebars.js",
-    "instafeed": "./bower_components/instafeed.js/instafeed.js"
+    "instafeed": "./bower_components/instafeed.js/instafeed.js",
+    "fancybox": "./bower_components/fancybox/dist/jquery.fancybox.js"
   },
   "browserify": {
     "transform": [
