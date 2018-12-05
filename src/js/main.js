@@ -3,6 +3,7 @@ var $, whichTransitionEvent;
 $ = require('jquery');
 // var slidebars = require('slidebars');
 var Instafeed = require('instafeed');
+var Instafeed = require('fancybox');
 
 console.log('js loaded');
 

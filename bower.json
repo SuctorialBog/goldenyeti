@@ -12,7 +12,8 @@
     "owlcarousel": "~1.3.2",
     "select2": "~3.5.0",
     "slidebars": "https://github.com/Slowvoice/Slidebars.git#master",
-    "instafeed.js": "~1.4.1"
+    "instafeed.js": "~1.4.1",
+    "fancybox": "^3.5.2"
   },
   "overrides": {
     "modernizr": {
