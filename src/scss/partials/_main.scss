@@ -364,3 +364,39 @@
   border-bottom: 1px solid $white;
   border-top: 1px solid $white;
 }
+/// EIGHTYEIGHT BANNER /////////////////////////////////////////////////////////
+.eightyeight-banner {
+  @include col(1);
+  @include cf();
+  margin: 0;
+  background: $white;
+  padding: 1em 0;
+  text-align: center;
+  @include bp-between($tp-small-med, $bp-med) {
+  }
+  @include bp-at-least($bp-med) {
+  }
+  a {
+    display: block;
+    text-align: center;
+    color: #1B2A36;
+    &:hover {
+      color: #F7A240;
+      transition: all 1s;
+    }
+    .logo-item {
+      width: 300px;
+      margin: 0 auto;
+    }
+    img {
+      float: left;
+      width: 100px;
+    }
+    p {
+      float: left;
+      @include font-size(1.2);
+      @include line-height(2.0);
+      margin-left: 1em;
+    }
+  }
+}
