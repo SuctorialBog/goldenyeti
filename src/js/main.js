@@ -2,7 +2,7 @@ var $, whichTransitionEvent;
 
 $ = require('jquery');
 // var slidebars = require('slidebars');
-var Instafeed = require('instafeed');
+// var Instafeed = require('instafeed');
 var fancybox = require('fancybox');
 
 console.log('js loaded');
@@ -113,65 +113,67 @@ $(function() {
 	// });
 	// maryFeed.run();
 
-	var jeffFeed = new Instafeed({
-		sortBy: 'most-recent',
-		get: 'user',
-		userId: '144571280',
-    limit: 32,
-		target: $('#jeff-portfolio')[0],
-		clientId: 'c59949355e1943a7bed01057b1259614',
-		accessToken: '144571280.c599493.87e44ccd1a1d4479939f7c5ce08081b5',
-		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
-	});
-	jeffFeed.run();
+// OLD INSTAFEED SHIIIIT
 
-	var bradFeed = new Instafeed({
-		sortBy: 'most-recent',
-		get: 'user',
-		userId: '27662183',
-    limit: 32,
-		target: $('#brad-portfolio')[0],
-		clientId: 'c59949355e1943a7bed01057b1259614',
-		accessToken: '27662183.c599493.e9107b5d04d0440da4bd49f6db96041c',
-		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
-	});
-	bradFeed.run();
-
-	var caitlynFeed = new Instafeed({
-		sortBy: 'most-recent',
-		get: 'user',
-		userId: '52239635',
-    limit: 32,
-		target: $('#caitlyn-portfolio')[0],
-		clientId: 'c59949355e1943a7bed01057b1259614',
-		accessToken: '52239635.c599493.958f3fd487eb4ac7b0ea4a4fa25ddd2f',
-		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
-	});
-	caitlynFeed.run();
-
-	var maryFeed = new Instafeed({
-		sortBy: 'most-recent',
-		get: 'user',
-		userId: '18964608',
-    limit: 32,
-		target: $('#mary-portfolio')[0],
-		clientId: 'c59949355e1943a7bed01057b1259614',
-		accessToken: '18964608.c599493.55464b4033a347828c8d71dc0a20e6cc',
-		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
-	});
-	maryFeed.run();
-
-	var murrayFeed = new Instafeed({
-		sortBy: 'most-recent',
-		get: 'user',
-		userId: '36382497',
-    limit: 32,
-		target: $('#murray-portfolio')[0],
-		clientId: 'c59949355e1943a7bed01057b1259614',
-		accessToken: '36382497.c599493.9321a2f067d54ae58c183e14fc7c342c',
-		template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
-	});
-	murrayFeed.run();
+	// var jeffFeed = new Instafeed({
+	// 	sortBy: 'most-recent',
+	// 	get: 'user',
+	// 	userId: '144571280',
+  //   limit: 32,
+	// 	target: $('#jeff-portfolio')[0],
+	// 	clientId: 'c59949355e1943a7bed01057b1259614',
+	// 	accessToken: '144571280.c599493.87e44ccd1a1d4479939f7c5ce08081b5',
+	// 	template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+	// });
+	// jeffFeed.run();
+	//
+	// var bradFeed = new Instafeed({
+	// 	sortBy: 'most-recent',
+	// 	get: 'user',
+	// 	userId: '27662183',
+  //   limit: 32,
+	// 	target: $('#brad-portfolio')[0],
+	// 	clientId: 'c59949355e1943a7bed01057b1259614',
+	// 	accessToken: '27662183.c599493.e9107b5d04d0440da4bd49f6db96041c',
+	// 	template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+	// });
+	// bradFeed.run();
+	//
+	// var caitlynFeed = new Instafeed({
+	// 	sortBy: 'most-recent',
+	// 	get: 'user',
+	// 	userId: '52239635',
+  //   limit: 32,
+	// 	target: $('#caitlyn-portfolio')[0],
+	// 	clientId: 'c59949355e1943a7bed01057b1259614',
+	// 	accessToken: '52239635.c599493.958f3fd487eb4ac7b0ea4a4fa25ddd2f',
+	// 	template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+	// });
+	// caitlynFeed.run();
+	//
+	// var maryFeed = new Instafeed({
+	// 	sortBy: 'most-recent',
+	// 	get: 'user',
+	// 	userId: '18964608',
+  //   limit: 32,
+	// 	target: $('#mary-portfolio')[0],
+	// 	clientId: 'c59949355e1943a7bed01057b1259614',
+	// 	accessToken: '18964608.c599493.55464b4033a347828c8d71dc0a20e6cc',
+	// 	template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+	// });
+	// maryFeed.run();
+	//
+	// var murrayFeed = new Instafeed({
+	// 	sortBy: 'most-recent',
+	// 	get: 'user',
+	// 	userId: '36382497',
+  //   limit: 32,
+	// 	target: $('#murray-portfolio')[0],
+	// 	clientId: 'c59949355e1943a7bed01057b1259614',
+	// 	accessToken: '36382497.c599493.9321a2f067d54ae58c183e14fc7c342c',
+	// 	template: '<a class="portfolio-img" href="{{link}}"><img src="{{image}}" /></a>'
+	// });
+	// murrayFeed.run();
 
 	/// DROPDOWN NAV CLASS /////
 
