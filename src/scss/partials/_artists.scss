@@ -26,6 +26,10 @@
     background: url(../img/murray-artist-banner.jpg) 50% 50% no-repeat;
     background-size: cover;
   }
+  &.nicole {
+    background: url(../img/nicole-artist-banner.jpg) 50% 50% no-repeat;
+    background-size: cover;
+  }
 }
 .artist-hero-title {
   @include font-size(5.0);
